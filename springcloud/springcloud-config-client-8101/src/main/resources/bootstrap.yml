@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      name: springcloud-config-client
+      profile: beta
+      uri: http://192.168.0.35:7101

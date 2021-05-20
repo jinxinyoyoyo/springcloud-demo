@@ -1,0 +1,17 @@
+server:
+  port: 7101
+
+spring:
+  application:
+    name: springcloud-config
+  cloud:
+    config:
+      enabled: true
+      server:
+        svn:
+          uri: https://192.168.0.35/svn/springcloudconfig/
+          username: config
+          password: 123456
+        default-label: config
+  profiles:
+    active: subversion

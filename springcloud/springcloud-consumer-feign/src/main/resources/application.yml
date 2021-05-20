@@ -1,0 +1,21 @@
+server:
+  port: 8000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:123456@192.168.0.35:7001/eureka,http://eureka:123456@192.168.0.35:7002/eureka,http://eureka:123456@192.168.0.102:7003/eureka
+    register-with-eureka: false
+
+feign:
+  compression:
+    request:
+      mime-types:
+      - text/xml
+      - application/xml
+      - application/json
+      min-request-size: 2048
+
+logging:
+  level:
+    com.jjkj.service: debug
